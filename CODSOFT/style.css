@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #1f2d2d;
+    background-color: #89decd;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #d4f1f4;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    color: #056674;
+    font-size: 1.8rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #056674;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #028090;
+  }
+  
+  /* Hero */
+  .hero {
+    background-color: #4d8c94;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    color: #035e7b;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1b3c42;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    background-color: #028090;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #056674;
+  }
+  
+  /* Features */
+  .features {
+    padding: 60px 0;
+    background-color: #180894;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #035e7b;
+  }
+  
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .feature-box {
+    background-color: #e0f7f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .feature-box h4 {
+    color: #056674;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box p {
+    color: #1b3c42;
+  }
+  
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+
+  /* Footer */
+  footer {
+    background-color: #11ca07;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #056674;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .feature-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
